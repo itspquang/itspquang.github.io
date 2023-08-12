@@ -1,0 +1,93 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="neuroscience.html">Neuroscience</a> > Proust and the Squid: The Story and Science of the Reading Brain</h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/proust.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/proust1.jpg">
+            <img src="images/proust2.jpg">
+            <img src="images/proust3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>Proust and the Squid: The Story and Science of the Reading Brain</h1>
+    <p>The act of reading is a miracle. Every new reader's brain possesses the extraordinary capacity to rearrange itself beyond its original abilities in order to understand written symbols. But how does the brain learn to read? As world-renowned cognitive neuroscientist and scholar of reading Maryanne Wolf explains in this impassioned book, we taught our brain to read only a few thousand years ago, and in the process changed the intellectual evolution of our species.</p>
+    <p>Turning her attention to the development of the individual reading brain, Wolf draws on her expertise in dyslexia to investigate what happens when the brain finds it difficult to read. Interweaving her vast knowledge of neuroscience, psychology, literature, and linguistics, Wolf takes the reader from the brains of a pre-literate Homer to a literacy-ambivalent Plato, from an infant listening to Goodnight Moon to an expert reader of Proust, and finally to an often misunderstood child with dyslexia whose gifts may be as real as the challenges he or she faces.
+
+    </p>
+    <p>As we come to appreciate how the evolution and development of reading have changed the very arrangement of our brain and our intellectual life, we begin to realize with ever greater comprehension that we truly are what we read. Ambitious, provocative, and rich with examples, Proust and the Squid celebrates reading, one of the single most remarkable inventions in history. Once embarked on this magnificent story of the reading brain, you will never again take for granted your ability to absorb the written word.
+    </p><br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

@@ -1,0 +1,104 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Privacy Policy Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Privacy Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section>
+    <h1>Privacy Policy</h1>
+    <p>
+        ME-Pham Minh Quang built the Osborne as a Free website. This SERVICE is provided by Pham Minh Quang at no cost and is intended 
+        for use as is.</p>
+<p>
+This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information 
+if anyone decided to use our Service.</p>
+<p>
+
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. 
+The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information 
+with anyone except as described in this Privacy Policy.
+</p>
+<p><b>Information Collection and Use</b><br><br>
+
+    (This will be a feature in the future) For a better experience, while using our Service, we may require you to provide us with 
+    certain personally identifiable information, 
+    including but not limited to Osborne. The information that we request will be retained by us and used as described in this 
+    privacy policy.
+    
+    The app does use third-party services that may collect information used to identify you.</p>
+    <p><b>Security</b><br><br>
+
+        We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of 
+        protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and 
+        reliable, and we cannot guarantee its absolute security.<br><br>
+        
+        <b>Links to Other Sites</b><br><br>
+        
+        This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these 
+        external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. 
+        We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+<p><b>Changes to This Privacy Policy</b><br><br>
+
+    We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. 
+    We will notify you of any changes by posting the new Privacy Policy on this page.
+    
+</p>
+</section>
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

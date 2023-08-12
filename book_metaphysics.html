@@ -1,0 +1,95 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="best.html">Bestsellers</a> > Metaphysics</h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/metaphysics.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/metaphysics1.jpg">
+            <img src="images/metaphysics2.jpg">
+            <img src="images/metaphysics3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>The Metaphysics</h1>
+    <p>The first major work in the history of philosophy to bear the title “Metaphysics” was the treatise by Aristotle that we have come to know by that name. But Aristotle himself did not use that title or even describe his field of study as ‘metaphysics’; the name was evidently coined by the first century C.E. editor who assembled the treatise we know as Aristotle’s Metaphysics out of various smaller selections of Aristotle’s works. The title ‘metaphysics’—literally, ‘after the Physics’—very likely indicated the place the topics discussed therein were intended to occupy in the philosophical curriculum. They were to be studied after the treatises dealing with nature (ta phusika). In this entry, we discuss the ideas that are developed in Aristotle’s treatise.
+
+    </p>
+    <p>Is Aristotle's metaphysics good?
+        The Metaphysics is considered to be one of the greatest philosophical works. Its influence on the Greeks, the Muslim philosophers, Maimonides thence the scholastic philosophers and even writers such as Dante was immense.</p>
+    <p>Metaphysics, for Aristotle, was the study of nature and ourselves. In this sense he brings metaphysics to this world of sense experience–where we live, learn, know, think, and speak.
+
+        Metaphysics is the study of being qua being, which is, first, the study of the different ways the word “be” can be used.</p><br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

@@ -1,0 +1,80 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: About us Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="aboutus">
+    <h1>About us</h1>
+    <p> I am a first year student from RMIT University.</p>
+    <p>I enjoy playing games and music, maybe coding will be one of my hobby in the future when I'm good at it</p>
+    <p>This website is the first website that I have ever created, it's still in development but I guarantee that 
+        it will <br> become even better in the future </p>
+    <p>The books on display are all my favorites, especially the ones in the bestsellers section</p>
+    <p>If you are interested in the subject and want to dig deeper, you will be rewarded a 7-day-free-trial-all-books-to-choose coupon
+        <br>or so called borrowing books instead of buying </p>
+    <p>To know more, you can contact me via these social media</p>
+    <a href="https://www.facebook.com/Wond3rofU/"><img src="images/facebook.png"></a>
+    <a href=mailto:"s3978814@rmit.edu.vn"><img src="images/gmail.png"></a>
+    <a href=mailto:"s3978814@rmit.edu.vn"><img src="images/outlook.png"></a>
+    
+
+</section>
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

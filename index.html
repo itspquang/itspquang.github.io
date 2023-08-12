@@ -1,0 +1,185 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Home Page--->
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Home Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+  integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        <div class="home">
+<div class="punchline">
+    <h1>GET READY <br> TO DISCOVER 
+    </h1>
+    <br>
+    <p>Dive deeper and deeper into the pool of knowledge</p>
+    </div>
+<div class="headerpic">
+    <a href="book_logic.html"><img src="images/headerpic.jpg"></a>
+        <span class="caption"><h1><b>The Science of Logic</b></h1>Friedrich Hegel</span>     
+</div>
+<div class="headerpic1">
+    <a href="book_civilized.html"><img src="images/headerpic1.png"></a>
+    <span class="caption"><h1><b>Civilized to Death</b></h1>Christopher Ryan</span>  
+</div>
+</div>
+</section>
+<!---JavaScript--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<section class="cate1">
+    <a href ="best.html"><h1>Bestsellers</h1></a>
+    
+    <div class="pic1">
+        <a href ="book_nothingness.html"><img src="images/being.jpg"></a>
+    <span class="caption"><h2><b>Being and Nothingness</b></h2><p>by Jean Paul Satre<br>$20
+    <br> ★★★★☆</p></span>
+    <button class="button">Purchase</button>
+</div>
+    <div class="pic2">
+        <a href ="book_brain.html"><img src="images/brain.jpg"></a>
+    <span class="caption"><h2><b>The Brain that Changes Itself</b></h2><p>by Norman Doidge<br>$20
+        <br> ★★★★☆</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic3">
+        <a href ="book_metamorphosis.html"><img src="images/metamorphosis.jpg"></a>
+    <span class="caption"><h2><b>The Metamorphosis</b></h2><p>by Frantz Kafka<br>$20
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic4">
+        <a href ="book_crime.html"><img src="images/crime.jpg"></a>
+    <span class="caption"><h2><b>Crime and Punishment</b></h2><p>by Fyodor Dostoevsky<br>$25
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+
+
+
+</section>
+
+<section class="cate1">
+    <a href="neuroscience.html"><h1>Neuroscience </h1></a>
+    
+    <br>
+    <div class="pic1">
+        <a href="book_happy.html"><img src="images/happy.jpg"></a>
+    <span class="caption"><h2><b>The Happiness Hypothesis</b></h2><p>by Jonathan Haidt<br>$20
+    <br> ★★★★☆</p></span>
+    <button class="button">Purchase</button>
+</div>
+    <div class="pic2">
+        <a href="book_descartes.html"><img src="images/descartes.jpg"></a>
+    <span class="caption"><h2><b>Descartes's Error</b></h2><p>by Antonio Damasio<br>$20
+        <br> ★★★★☆</p></span>
+        <button class="button">Purchase </button>
+    </div>
+    <div class="pic3">
+        <a href="book_on.html"><img src="images/on.jpg"></a>
+    <span class="caption"><h2><b>On Intelligence</b></h2><p>by Jeff Hawkins<br>$20
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic4">
+        <a href="book_tale.html"><img src="images/tale.jpg"></a>
+    <span class="caption"><h2><b>The Tel-Tale Brain</b></h2><p>by V.S. Ramachandran<br>$25
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+
+
+
+</section>
+<section class="cate1">
+    <a href="philoshophy.html"><h1>Philoshophy </h1></a>
+    <br>
+    <div class="pic1">
+        <a href="book_zarathustra.html"><img src="images/zarathustra.jpg"></a>
+    <span class="caption"><h2><b>Thus Spoke Zarathustra</b></h2><p>by Friedrich Nieztche<br>$20
+    <br> ★★★★☆</p></span>
+    <button class="button">Purchase</button>
+</div>
+    <div class="pic2">
+        <a href="book_notes.html"><img src="images/notes.jpg"></a>
+    <span class="caption"><h2><b>Notes from Underground</b></h2><p>by Fyodor Dostoevsky<br>$20
+        <br> ★★★★☆</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic3">
+        <a href="book_demons.html"><img src="images/demons.jpg"></a>
+    <span class="caption"><h2><b>Demons</b></h2><p>by Fyodor Dostoevsky<br>$20
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic4">
+        <a href="book_gay.html"><img src="images/gay.jpg"></a>
+    <span class="caption"><h2><b>The Gay Science</b></h2><p>by Friedrich Nieztche<br>$25
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+
+
+
+</section>
+<section>
+    <iframe src="https://www.youtube.com/embed/ijc2CVfaFF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/1CUlcbgn8IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/mg40BynVOxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

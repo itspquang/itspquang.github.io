@@ -1,0 +1,131 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Bestsellers Page--->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bestsellers Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="category.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+  integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+</section>
+<!---JavaScript--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<section class="cate1">
+    <h1>Rated by Customers
+    </h1>
+    
+    <div class="pic1">
+    <a href="book_nothingness.html"><img src="images/being.jpg"></a>
+    <span class="caption"><h2><b>Being and Nothingness</b></h2><p>by Jean Paul Satre<br>$20
+    <br> ★★★★☆</p></span>
+    <button class="button">Purchase</button>
+</div>
+    <div class="pic2">
+    <a href ="book_brain.html"><img src="images/brain.jpg"></a>
+    <span class="caption"><h2><b>The Brain that Changes Itself</b></h2><p>by Norman Doidge<br>$20
+        <br> ★★★★☆</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic3">
+    <a href="book_metamorphosis.html"><img src="images/metamorphosis.jpg"></a>
+    <span class="caption"><h2><b>The Metamorphosis</b></h2><p>by Frantz Kafka<br>$20
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic4">
+    <a href="book_crime.html"><img src="images/crime.jpg"></a>
+    <span class="caption"><h2><b>Crime and Punishment</b></h2><p>by Fyodor Dostoevsky<br>$25
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+
+
+
+</section>
+
+<section class="cate1">
+    <h1>Osborne's Recommendation</h1>
+    
+    <br>
+    <div class="pic1">
+        <a href="book_knowledge.html"><img src="images/knowledge.jpg"></a>
+    <span class="caption"><h2><b>What is this Thing<br> called Knowledge</b></h2><p>by Duncan Pritchard<br>$20
+    <br> ★★★★☆</p></span>
+    <button class="button">Purchase</button>
+</div>
+    <div class="pic2">
+        <a href="book_neuroanatomy.html"><img src="images/neuroanatomy.jpg"></a>
+    <span class="caption"><h2><b>Neuroanatomy in<br> clinical context</b></h2><p>by Duane E. Haines<br>$20
+        <br> ★★★★☆</p></span>
+        <button class="button">Purchase </button>
+    </div>
+    <div class="pic3">
+        <a href="book_undoingproject.html"><img src="images/undoingproject.jpg"></a>
+    <span class="caption"><h2><b>The Undoing Project<br>.</b></h2><p>by Michael Lewis<br>$20
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic4">
+        <a href="book_metaphysics.html"><img src="images/metaphysics.jpg"></a>
+    <span class="caption"><h2><b>Metaphysics<br>.</b></h2><p>by Aristole<br>$25
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+
+
+
+</section>
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

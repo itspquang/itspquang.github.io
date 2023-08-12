@@ -1,0 +1,97 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="philoshophy.html">Philoshophy</a>> Demons </h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/demons.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/demons1.jpg">
+            <img src="images/demons2.jpg">
+            <img src="images/demons3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>Demons</h1>
+    <p>"Demons" is a novel by the famous Russian author Fyodor Dostoyevsky that was first published in the journal "The Russian Messenger" over several months in 1871 and '72. To this day, it is considered one of Dostoyevsky's best works and a masterwork. The novel is a commentary on the political nihilism prevalent in Russia in the 1860's.
+
+    </p>
+    <p>
+        The story centers around a fictional Russian town as it becomes the nexus point for an attempted political revolution. The head conspirator, a man named Pytor Verkhovensky organizes the revolution from his secret society, working in the shadows and in the homes of some of the richest people in the town to secretly bring them down.
+    </p>
+    <p>
+        His moral counterpart, Nikolai Stavrogin is the other dominant figure in the story. An aristocratic man who has recently returned to the town with a new wife and a dark secret. Along with Pytor's father, Stepan, Nikolai ends up being an unwitting conspirator in the revolution and eventually hangs himself after his lover is killed.
+        The book continues to be considered a classic of Russian literature to this day and has been adapted many times, including three plays and two film productions.
+    </p><br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

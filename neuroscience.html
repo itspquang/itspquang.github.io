@@ -1,0 +1,129 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Neuroscience Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neuroscience Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="category.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="cate1">
+    <h1>Cognitive Neuroscience</h1>
+    
+    <div class="pic1">
+        <a href="book_incharge.html"><img src="images/incharge.jpg"></a>
+    <span class="caption"><h2><b>Who's in Charge</b></h2><p>by Michael Gazzaniga<br>$20
+    <br> ★★★★☆</p></span>
+    <button class="button">Purchase</button>
+</div>
+    <div class="pic2">
+        <a href="book_beingyou.html"><img src="images/beingyou.jpg"></a>
+    <span class="caption"><h2><b>Being You</b></h2><p>by Anil Seth<br>$20
+        <br> ★★★★☆</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic3">
+        <a href="book_proust.html"><img src="images/proust.jpg"></a>
+    <span class="caption"><h2><b>Proust and the Squid</b></h2><p>by Maryanne Wolf<br>$20
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic4">
+        <a href="book_conceptofmind.html"><img src="images/conceptofmind.jpg"></a>
+    <span class="caption"><h2><b>The Concept of Mind</b></h2><p>by Gilbert Ryle<br>$25
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+
+
+
+</section>
+
+<section class="cate1">
+    <h1>Neuroscience with a little mix of Philoshophy</h1>
+    <div class="see">
+        
+    <br>
+    <div class="pic1">
+        <a href="book_happy.html"><img src="images/happy.jpg"></a>
+    <span class="caption"><h2><b>The Happiness Hypothesis</b></h2><p>by Jonathan Haidt<br>$20
+    <br> ★★★★☆</p></span>
+    <button class="button">Purchase</button>
+</div>
+    <div class="pic2">
+        <a href="book_descartes.html"><img src="images/descartes.jpg"></a>
+    <span class="caption"><h2><b>Descartes's Error</b></h2><p>by Antonio Damasio<br>$20
+        <br> ★★★★☆</p></span>
+        <button class="button">Purchase </button>
+    </div>
+    <div class="pic3">
+        <a href="book_on.html"><img src="images/on.jpg"></a>
+    <span class="caption"><h2><b>On Intelligence</b></h2><p>by Jeff Hawkins<br>$20
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+    <div class="pic4">
+        <a href="book_tale.html"><img src="images/tale.jpg"></a>
+    <span class="caption"><h2><b>The Tel-Tale Brain</b></h2><p>by V.S. Ramachandran<br>$25
+        <br> ★★★★★</p></span>
+        <button class="button">Purchase</button>
+    </div>
+
+
+
+</section>
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

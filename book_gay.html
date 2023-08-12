@@ -1,0 +1,96 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="philoshophy.html">Philoshophy</a>>The Gay Science </h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/gay.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/gay1.jpg">
+            <img src="images/gay2.jpg">
+            <img src="images/gay3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>The Gay Science</h1>
+    <p>
+        The Gay Science consists of five books, a preface, and an appendix of songs. The topics addressed are often covered in Nietzsche's other works (although not necessarily in the same way). For instance, one recurring theme is the distinction between the Dionysian and Apollonian approaches to art and science. Named after the Greek God of the sun, the Apollonian approach is strict, measured, and rationalistic. The Dionysian approach, named after the Greek god of mirth and revelry, is chaotic and emotional. In contrast to the intellectual trends of the day that were entirely Apollonian, Nietzsche praised the Dionysian approach. Each book consists of a series of loosely connected aphorisms, and no comprehensive summary is possible.
+    </p>
+    <p>
+        Nietzsche's The Gay Science was named after the troubadour songs of southern-French Provence. The "gay science" refers to the art of making poetry. In the spirit of poetry and song-making, Nietzsche's book is a collection of aphorisms rather than a scholarly argument. There is some debate about how unified the book is; the parts of the book may offer a coherent theory or simply be an assembly of random sayings and observations.
+    </p>
+    <p>
+        Famously, Nietzsche makes a claim in The Gay Science that God is dead. His point here is that religion and the Christian church no longer have the authority they once did. They are no longer viewed as possessing the truth. Instead, Nietzsche remarks that scientists and educators have that kind of authority, although he does not celebrate this change of authority as many Enlightenment thinkers did. Note that the Enlightenment was an intellectual movement in the seventeenth through early nineteenth centuries that condemned superstition and celebrated critical rationality.
+    </p><br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

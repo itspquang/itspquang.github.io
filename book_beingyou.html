@@ -1,0 +1,90 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="neuroscience.html">Neuroscience</a> Being You: A New Science of Consciousness</h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/beingyou.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/beingyou1.jpg">
+            <img src="images/beingyou2.jpg">
+            <img src="images/beingyou3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>Being You: A New Science of Consciousness</h1>
+    <p>Anil Seth's quest to understand the biological basis of conscious experience is one of the most exciting contributions to twenty-first-century science.</p>
+    <p>What does it mean to “be you”—that is, to have a specific, conscious experience of the world around you and yourself within it? There may be no more elusive or fascinating question. Historically, humanity has considered the nature of consciousness to be a primarily spiritual or philosophical inquiry, but scientific research is now mapping out compelling biological theories and explanations for consciousness and selfhood.</p>
+    <p>Now, internationally renowned neuroscience professor, researcher, and author Anil Seth is offers a window into our consciousness in BEING YOU: A New Science of Consciousness. Anil Seth is both a leading expert on the neuroscience of consciousness and one of most prominent spokespeople for this relatively new field of science. His radical argument is that we do not perceive the world as it objectively is, but rather that we are prediction machines, constantly inventing our world and correcting our mistakes by the microsecond, and that we can now observe the biological mechanisms in the brain that accomplish this process of consciousness.</p><br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

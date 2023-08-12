@@ -1,0 +1,96 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="philoshophy.html">Philoshophy</a> > Thus Spoke Zarathustra </h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/zarathustra.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/zarathustra1.jpg">
+            <img src="images/zarathustra2.jpg">
+            <img src="images/zarathustra3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>Thus Spoke Zarathustra</h1>
+    <p>A tremendously influential philosophical work of the late nineteenth century, Thus Spake Zarathustra is also a literary masterpiece by one of the most important thinkers of modern times. In it, the ancient Persian religious leader Zarathustra (or Zoroaster) serves as the voice for Friedrich Nietzsche's views, which include the introduction of the controversial doctrine of the Übermensch, or "superman."
+
+    </p>
+    <p>Although later perverted by Nazi propagandists, the Übermensch was conceived by Nietzsche to designate the ultimate goal of human existence as the achievement of greatness of will and being. He was convinced that the individual, instead of resigning himself to the weakness of being human and worshipping perfection only possible in the next world (at least in the Christian view), should try to perfect himself during his earthly existence, and transcend the limitations of conventional morality. By doing so, the Übermensch would emerge victorious, standing in stark contrast to "the last man" — an uncreative conformist and complacent hedonist who embodies Nietzsche's critique of modern civilization, morality, and the Christian religion.
+
+    </p>
+    <p>
+        Written in a passionate, quasi-biblical style, Thus Spake Zarathustra is daring in form and filled with provocative, thought-provoking concepts. Today, the work is regarded as a forerunner of modern existentialist thought, a book that has provoked and stimulated students of philosophy and literature for more than 100 years.
+    </p><br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

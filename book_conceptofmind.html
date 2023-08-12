@@ -1,0 +1,90 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="neuroscience.html">Neuroscience</a> > Concept of Mind</h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/conceptofmind.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/conceptofmind1.jpg">
+            <img src="images/conceptofmind2.jpg">
+            <img src="images/conceptofmind3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>The Concept of Mind</h1>
+    <p>First published in 1949, Gilbert Ryle’s The Concept of Mind is one of the classics of twentieth-century philosophy. Described by Ryle as a ‘sustained piece of analytical hatchet-work’ on Cartesian dualism, The Concept of Mind is a radical and controversial attempt to jettison once and for all what Ryle called ‘the ghost in the machine’: Descartes’ argument that mind and body are two separate entities. This sixtieth anniversary edition includes a substantial commentary by Julia Tanney and is essential reading for new readers interested not only in the history of analytic philosophy but in its power to challenge major currents in philosophy of mind and language today.
+    </p>
+    <p>'This new edition of Ryle’s classic work, with a substantial critical study by Julia Tanney, will make possible a re-assessment of Ryle and of the revolutionary potential of The Concept of Mind. Tanney’s treatment of Ryle is complex and subtle, and opens up important new ways of thinking in philosophy of mind and philosophy of language.' - Cora Diamond, University of Virginia, USA</p><br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

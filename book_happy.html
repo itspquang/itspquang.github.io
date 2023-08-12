@@ -1,0 +1,91 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="neuroscience.html">Neuroscience</a> > The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom</h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/happy.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/happy1.jpg">
+            <img src="images/happy2.jpg">
+            <img src="images/happy3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>The Happiness Hypothesis: Finding Modern Truth in Ancient Wisdom</h1>
+    <p>
+        "The most brilliant and lucid analysis of virtue and well-being in the entire literature of positive psychology. For the reader who seeks to understand happiness, my advice is: Begin with Haidt."  —Martin E.P. Seligman, University of Pennsylvania and author of Authentic Happiness</p>
+    <p>The Happiness Hypothesis is a book about ten Great Ideas. Each chapter is an attempt to savor one idea that has been discovered by several of the world's civilizations—to question it in light of what we now know from scientific research, and to extract from it the lessons that still apply to our modern lives and illuminate the causes of human flourishing. Award-winning psychologist Jonathan Haidt shows how a deeper understanding of the world's philosophical wisdom and its enduring maxims—like "do unto others as you would have others do unto you," or "what doesn't kill you makes you stronger"—can enrich and transform our lives.</p>
+         <br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

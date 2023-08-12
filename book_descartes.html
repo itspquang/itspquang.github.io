@@ -1,0 +1,89 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="neuroscience.html">Neuroscience</a> >Descartes' Error: Emotion, Reason, and the Human Brain</h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/descartes.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/descartes1.jpg">
+            <img src="images/descartes2.jpg">
+            <img src="images/descartes3.png">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>Descartes' Error: Emotion, Reason, and the Human Brain</h1>
+    <p>Since Descartes famously proclaimed, "I think, therefore I am," science has often overlooked emotions as the source of a person’s true being. Even modern neuroscience has tended, until recently, to concentrate on the cognitive aspects of brain function, disregarding emotions. This attitude began to change with the publication of Descartes’ Error in 1995. Antonio Damasio—"one of the world’s leading neurologists" (The New York Times)—challenged traditional ideas about the connection between emotions and rationality. In this wondrously engaging book, Damasio takes the reader on a journey of scientific discovery through a series of case studies, demonstrating what many of us have long suspected: emotions are not a luxury, they are essential to rational thinking and to normal social behavior.</p>
+         <br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>

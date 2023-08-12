@@ -1,0 +1,103 @@
+<!---RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023
+  Assessment: Assignment 1 - Static Website
+  Author: Pham Minh Quang
+  ID: S3978814
+  Acknowledgement: Book Detail Page--->
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="booksdetail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" >
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="best.html">BESTSELLERS</a></li>
+                    <li><a href="philoshophy.html">PHILOSOPHY</a></li>
+                    <li><a href="neuroscience.html">NEUROSCIENCE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-x" onclick="showMenu()"></i>
+        </nav>
+        </section>
+        <!---JavaScript--->
+<script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+</script>
+<section class="det">
+    <h2><a href="index.html">Home</a> > <a href="best.html">Bestsellers</a> > The Brain that Changes Itself</h2>
+    <div class="desc">
+        <div class="imga">
+            <img src="images/brain.jpg">
+        </div>
+        <div class="timg">
+            <img src="images/brain1.jpg">
+            <img src="images/brain2.jpg">
+            <img src="images/brain3.jpg">
+            
+        </div>
+        
+       
+        
+    </div>
+    <div class="money">
+        <h1>$20</h1>
+    </div>
+    <button class="button">Purchase</button>
+    <h1>The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science</h1>
+    <p>The book is a collection of stories of doctors and patients showing that the human brain is capable of undergoing change, 
+        including stories of recovering use of paralyzed body parts, deaf people learning to hear, and others getting relief from pain
+         using exercises to retrain neural pathways. Doidge also covers scientists who first identified neuroplasticity, the subjects of 
+         persistent pain, sexual attraction and love, how culture impacts the changing brain, the developing pediatric brain and the 
+         preservation of the geriatric brain.</p>
+    <p>Dr. Doidge, a Canadian psychiatrist and award-winning science writer, recounts the accomplishments of the "neuroplasticians," as he calls the neuroscientists involved in these new studies, with breathless reverence. Their work is indeed mind-bending, miracle-making, reality-busting stuff, with implications, as Dr. Doidge notes, not only for individual patients with neurologic disease but for all human beings, not to mention human culture, human learning and human history.
+
+        <br>— New York Times
+    </p>
+    <p>The book is rich in both journalism and science. Not only does the author have professional credentials deriving from his 
+        training as a psychiatrist and analyst, but he also has extensive experience in writing, including a three-year stint writing 
+        the column 'On Human Nature' for the Canadian newspaper The National Post. [...] More than anything else, it is Doidge's 
+        standing as a professioinal observer of human behavior that ultimately captivates the reader.
+
+        <br>— Peter Reiner in American Journal of Bioethics</p>
+         <br>
+</section>
+
+</body>
+<footer>
+    <nav>
+        
+        <div class="footer-nav-links">
+    
+            <a href="about.html">ABOUT US</a>
+            <a href="privacy.html">PRIVACY POLICY</a>
+            <a href="terms.html">TERMS OF USE</a>
+            <a href="contact.html">CONTACT US</a>
+            
+        </div>
+    </nav>
+
+</footer>
+</html>
